@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id "net.serenity-bdd.serenity-gradle-plugin" version "3.3.2"
+}
+
+group 'com.choucair.AutoUtest'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-server:3.14.0'
+
+    implementation 'net.serenity-bdd:serenity-core:1.9.45'
+    implementation 'net.serenity-bdd:serenity-junit:1.9.45'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.15'
+    implementation 'net.serenity-bdd:serenity-screenplay:1.9.45'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.45'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
